@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitV | Fuel Your Strength</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="Brand-Logo.jpg">
+</div>
+
+<div class="search-box">
+<input type="text" id="searchBar" placeholder="Search products...">
+<button class="search-btn">🔍</button>
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+ 
+<div class="cart" onclick="showCart()">
+🛒 Cart (<span id="cartCount">0</span>)
+</div>
+
+<div class="nav-buttons">
+<button class="login">Login</button>
+<button class="signup">Sign Up</button>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fuel Your Strength</h1>
+
+<p>Premium Fitness Nutrition Built For Performance</p>
+
+<button>Explore Products</button>
+
+<div class="scroll-down">↓</div>
+ 
+<p class="tagline">Trusted by Fitness Enthusiasts Across India</p>
+
+</div>
+
+</section>
+
+<section class="trust-bar">
+
+<p>✔ Lab Tested Supplements</p>
+<p>✔ Trusted by Athletes</p>
+<p>✔ Fast Delivery Across India</p>
+
+</section>
+
+<section class="brand-banner">
+
+<h2>Fueling India's Fitness Journey</h2>
+
+<p>Premium supplements designed for strength, endurance, and performance.</p>
+
+</section>
+
+<section class="products">
+
+<h2>Top Picks</h2>
+
+<div class="carousel">
+
+<button class="prev">❮</button>
+
+<div class="carousel-track" id="productTrack">
+<!-- JS will insert products here -->
+</div>
+ 
+
+<button class="next">❯</button>
+
+</div>
+
+</section>
+
+<section id="all-products" class="all-products">
+
+<h2>Our Products</h2>
+
+<div class="products-grid" id="allProducts">
+
+<!-- Products will come from JavaScript -->
+
+</div>
+
+
+</section>
+
+<section class="why-fitv">
+
+<h2>Why Choose FitV</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>💪 Athlete Approved</h3>
+<p>Designed for serious fitness enthusiasts and athletes.</p>
+</div>
+
+<div class="feature">
+<h3>🧪 Lab Tested</h3>
+<p>All supplements tested for purity and performance.</p>
+</div>
+
+<div class="feature">
+<h3>🚚 Fast Delivery</h3>
+<p>Quick and reliable shipping across India.</p>
+</div>
+
+<div class="feature">
+<h3>⭐ Trusted Quality</h3>
+<p>Thousands of customers trust FitV for their fitness goals.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<h2 style="margin-bottom:30px;">Customer Reviews</h2>
+
+<div class="review-container">
+
+<div class="review">
+<p>"Amazing protein quality. My recovery improved a lot."</p>
+<span>- Rahul S.</span>
+</div>
+
+<div class="review">
+<p>"The creatine is very pure. Great results in strength."</p>
+<span>- Arjun M.</span>
+</div>
+
+<div class="review">
+<p>"Protein bars are tasty and perfect for quick energy."</p>
+<span>- Neha K.</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="results">
+
+<h2>Real Results With FitV</h2>
+
+<div class="results-container">
+
+<div class="result-card">
+
+<h3>Muscle Strength</h3>
+
+<p>Our Whey Protein supports faster recovery and muscle growth.</p>
+
+</div>
+
+<div class="result-card">
+
+<h3>Energy Boost</h3>
+
+<p>FitV Protein Bars provide instant energy for workouts.</p>
+
+</div>
+
+<div class="result-card">
+
+<h3>Performance</h3>
+
+<p>Lab tested creatine helps improve strength and endurance.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p> © 2026 FitV Nutrition </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<div id="cartDrawer" class="cart-drawer">
+
+<div class="cart-header">
+<h3>Your Cart</h3>
+<button onclick="closeCart()">✕</button>
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-footer">
+<p>Total: ₹<span id="cartTotal">0</span></p>
+</div>
+
+</div>
+
+</body>
+</html>
